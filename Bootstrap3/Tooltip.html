@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width = device-width, initial-scale=1">
+	<title>การติดตั้ง Bootstrap 3</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container" style="margin-top:20px; ">
+		<div class="row">
+			<div class="page-header">
+				<h1> page-header Tutorial <small>การใช้วาน page-header</small></h1>
+				
+			</div>
+		</div>
+	</div> 
+	
+	<div class="container">
+		<div class="col-md-3">
+			<button id="btnTop" data-placement="top" title="T ooltip on  top !!" type="button" class="btn btn-default">
+				Top
+			</button>
+		</div>
+
+		<div class="col-md-3">
+			<button id="btnBottom" data-placement="bottom" title="T ooltip on  bottom !!" type="button" class="btn btn-default">
+				Bottom
+			</button>
+		</div>
+		<div class="col-md-3">
+			<button id="btnLeft" data-placement="left" title="T ooltip on  left !!" type="button" class="btn btn-default">
+				Left
+			</button>
+		</div>
+		<div class="col-md-3">
+			<button id="btnRight" data-placement="right" title="T ooltip on  right !!" type="button" class="btn btn-default">
+				Right
+			</button>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		$('#btnTop').tooltip();
+
+		$('#btnBottom').tooltip();
+
+		$('#btnLeft').tooltip();
+
+		$('#btnRight').tooltip();
+	</script>
+
+
+
+</body>
+</html>

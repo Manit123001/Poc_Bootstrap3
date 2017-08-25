@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width = device-width, initial-scale=1">
+	<title>การติดตั้ง Bootstrap 3</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container" style="margin-top:20px; ">
+		<div class="row">
+			<div class="page-header">
+				<h1> Modal Tutorial <small>การใช้งาน Modal Embed</small></h1>
+				
+			</div>
+		</div>
+	</div> 
+
+		<div class="container">
+			<!-- Modal Button -->
+			<button id="btnModal" type="button" class="btn btn-default">Launch Modal</button>
+
+			<button class="btn btn-default" type="button" data-toggle="modal" data-target="#modal-id">	Launch Modal 2
+				</button>
+			<!-- Modal Content -->
+
+			
+			<div class="modal fade" id="modal-id">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">การเรียกใช้งานแบบ Java Script</h4>
+						</div>
+						<div class="modal-body">
+							การทำงาน
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Scrpit -->
+			<script type="text/javascript">
+				$('#btnModal').click(function(){
+					$('#modal-id').modal();
+				});
+			</script>
+
+		<!--  EP 29 -->
+		<div class="container">
+			<button class="btn btn-default"
+				data-toggle="modal"
+				data-target="#myModal"
+			> Launch Modal</button>
+
+
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<!-- close -->
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<!-- Title -->
+							<h4>การใช้งาน Modal.js</h4>
+						</div>
+						<!-- body -->
+						<div class="modal-body">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic autem deleniti in cum harum dolor iusto veniam necessitatibus, culpa praesentium ullam perferendis? Enim quo ad consectetur, recusandae excepturi delectus minima.
+							</p>
+						</div>
+						<!-- footer  -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-success">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+
+	
+				
+
+
+
+</body>
+</html>

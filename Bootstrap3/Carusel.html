@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width = device-width, initial-scale=1">
+	<title>การติดตั้ง Bootstrap 3</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<div class="container" style="margin-top:20px; ">
+		<div class="row">
+			<div class="page-header">
+				<h1> Carousel.js Tutorial <small>การใช้วาน Carousel.js</small></h1>
+				
+			</div>
+		</div>
+	</div> 
+
+	<div class="container">
+	<!-- 1. Corosel Slide -->
+	
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- 2. Carousel Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to ="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to ="1" class=""></li>
+				<li data-target="#myCarousel" data-slide-to ="2" class=""></li>
+				<li data-target="#myCarousel" data-slide-to ="3" class=""></li>
+
+			</ol>
+			<!-- 3. Slide inner -->
+			<div class="carousel-inner">
+				<!-- 3.1 Item 1 -->
+				<div class="item active">
+					<!-- 3.1.1 Image -->
+					<img src="./images/pang.jpg" >
+					<!-- 3.1.2 Caption -->
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Example headline.</h1>
+
+							<p>
+								Slide 1
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item ">
+					<!-- 3.1.1 Image -->
+					<img src="./images/pang.jpg">
+
+					<!-- 3.1.2 Caption -->
+					<div class="container">
+						<div class="carousel-caption">
+							<p>
+								Slide 2
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item ">
+					<!-- 3.1.1 Image -->
+					<img src="./images/pang.jpg">
+					<!-- 3.1.2 Caption -->
+					<div class="container">
+						<div class="carousel-caption">
+							<p>
+								Slide 3
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item ">
+					<!-- 3.1.1 Image -->
+					<img src="./images/pang.jpg">
+					<!-- 3.1.2 Caption -->
+					<div class="container">
+						<div class="carousel-caption">
+							<p>
+								Slide 4 
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nesciunt velit alias libero aspernatur autem assumenda deleniti consectetur debitis corporis, rerum voluptatibus molestiae praesentium, doloribus natus. Quas error assumenda, porro!
+							</p>
+							<p><a href="#" class="btn btn-danger">Read More</a></p>
+						</div>
+					</div>
+				</div>
+			</div><!-- End Carousel Inner -->
+			
+			<!-- 4. Carousel Control -->
+			<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a href="#myCarousel" class="right carousel-control" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+
+		</div><!-- End Carousel Slide-->
+		
+	</div>
+
+</body>
+</html>
